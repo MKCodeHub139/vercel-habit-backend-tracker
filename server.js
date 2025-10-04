@@ -29,7 +29,7 @@ async function connectToMongoDb() {
 
 // CORS
 const allowedOrigins = [
-  "https://vercel-frontend-habit-tracker.vercel.app"
+  process.env.FRONTEND_URL
 ];
 
 app.use(cors({
