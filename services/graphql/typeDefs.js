@@ -64,7 +64,7 @@ type Mutation {
     createUser(input: CreateUserInput!): User
     createHabit(input: CreateHabitInput!): Habit
     loginUser(input:LoginUserInput!):AuthPayload
-    logoutUser(id:ID!):User
+     logoutUser: Boolean!
     updateCompleteDates(input:updateCompleteDatesInput!): Habit
     updateStreak(input:updateStreakInput!): Habit
     deleteHabit(id:ID!): Habit

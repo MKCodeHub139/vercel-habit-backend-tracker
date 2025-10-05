@@ -61,6 +61,7 @@ const resolvers = {
           res.setHeader("Set-Cookie", "token=; Path=/; HttpOnly; Secure; SameSite=None; Max-Age=0");
         return true;
       }
+       return false
     },
     createHabit: async (parent, args, context) => {
       const { user } = context;
